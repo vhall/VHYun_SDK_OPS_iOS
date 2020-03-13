@@ -5,7 +5,7 @@
 集成和调用方式，参见官方文档：http://www.vhallyun.com/docs/show/305.html <br>
 
 ### SDK 两种引入方式
-1、pod 'VHYun_OPS','~> 2.1.0'<br>
+1、pod 'VHYun_OPS','~> 2.0.1'<br>
 有时pod设置路径失效，请手动设置Frameworks路径 <br>
    "${PODS_ROOT}/VHCore/VHYunFrameworks" <br>
    "${PODS_ROOT}/VHYun_OPS/VHYunFrameworks"<br>
