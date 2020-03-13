@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C03276B623028EB30006939E /* VHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B423028EB20006939E /* VHCore.framework */; };
-		C03276B823028F160006939E /* VHDoc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B323028EB20006939E /* VHDoc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C03276BA23028F160006939E /* VHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B423028EB20006939E /* VHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C03276BC23028F5E0006939E /* VHDoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B323028EB20006939E /* VHDoc.framework */; };
 		C0B878AF22E6B02A00054CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B878AE22E6B02A00054CA8 /* AppDelegate.m */; };
 		C0B878B222E6B02A00054CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B878B122E6B02A00054CA8 /* ViewController.m */; };
 		C0B878B522E6B02A00054CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B878B322E6B02A00054CA8 /* Main.storyboard */; };
@@ -44,8 +40,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C03276B823028F160006939E /* VHDoc.framework in Embed Frameworks */,
-				C03276BA23028F160006939E /* VHCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,8 +48,6 @@
 
 /* Begin PBXFileReference section */
 		C017BA8622F28DF500A103EC /* CONSTS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONSTS.h; sourceTree = "<group>"; };
-		C03276B323028EB20006939E /* VHDoc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VHDoc.framework; sourceTree = "<group>"; };
-		C03276B423028EB20006939E /* VHCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VHCore.framework; sourceTree = "<group>"; };
 		C0B878AA22E6B02A00054CA8 /* VHYunSDKDemo_OPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHYunSDKDemo_OPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B878AD22E6B02A00054CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0B878AE22E6B02A00054CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -106,24 +98,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03276BC23028F5E0006939E /* VHDoc.framework in Frameworks */,
-				C03276B623028EB30006939E /* VHCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C03276B223028EB20006939E /* VHYunFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C03276B323028EB20006939E /* VHDoc.framework */,
-				C03276B423028EB20006939E /* VHCore.framework */,
-			);
-			name = VHYunFrameworks;
-			path = ../../VHYunFrameworks;
-			sourceTree = "<group>";
-		};
 		C03276BB23028F5E0006939E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,7 +131,6 @@
 		C0B878AC22E6B02A00054CA8 /* VHYunSDKDemo_OPS */ = {
 			isa = PBXGroup;
 			children = (
-				C03276B223028EB20006939E /* VHYunFrameworks */,
 				C017BA8622F28DF500A103EC /* CONSTS.h */,
 				C0B878AD22E6B02A00054CA8 /* AppDelegate.h */,
 				C0B878AE22E6B02A00054CA8 /* AppDelegate.m */,
@@ -515,7 +494,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../VHYunFrameworks";
 				INFOPLIST_FILE = VHYunSDKDemo_OPS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -535,7 +513,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../VHYunFrameworks";
 				INFOPLIST_FILE = VHYunSDKDemo_OPS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
