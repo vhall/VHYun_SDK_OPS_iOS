@@ -68,6 +68,10 @@ typedef NS_ENUM(NSInteger,VHDrawType) {
  */
 @property (nonatomic,copy)NSString * documentdId;
 
+/*
+ * user ID 第三方id
+ */
+@property (nonatomic,copy)NSString * userId;
 
 /*
  * 显示类型 白板/文档演示

@@ -5,10 +5,9 @@
 集成和调用方式，参见官方文档：http://www.vhallyun.com/docs/show/305.html <br>
 
 ### SDK 两种引入方式
-1、pod 'VHYun_OPS','~> 2.0.1'<br>
-有时pod设置路径失效，请手动设置Frameworks路径 <br>
-   "${PODS_ROOT}/VHCore/VHYunFrameworks" <br>
-   "${PODS_ROOT}/VHYun_OPS/VHYunFrameworks"<br>
+1、pod 'VHYun_OPS'<br>
+注意检查有 Frameworks 路径 是否正常设置<br>
+
 2、手动下载拖入工程设置路径、Embed&Sign<br>
 注意依赖 https://github.com/vhall/VHYun_SDK_Core_iOS.git VHCore库<br>
 
@@ -20,6 +19,11 @@
 
 
 ### 版本更新信息
+
+#### 版本 v2.1.0 更新时间：2020.04.26
+更新内容：<br>
+1、优化底层渲染库<br>
+
 #### 版本 v2.0.1 更新时间：2020.03.13
 更新内容：<br>
 1、支持Pods集成<br>

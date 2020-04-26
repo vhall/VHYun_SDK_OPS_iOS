@@ -59,7 +59,7 @@
     vc.channelID    = DEMO_Setting.docChannelID;
     vc.accessToken  = DEMO_Setting.accessToken;
     vc.roomID       = DEMO_Setting.docRoomID;
-    
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
 
@@ -74,6 +74,7 @@
     
     DocUploadViewController * vc = [[DocUploadViewController alloc] init];
     vc.accessToken = DEMO_Setting.accessToken;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
     [self presentViewController:vc animated:YES completion:nil];
 }
 

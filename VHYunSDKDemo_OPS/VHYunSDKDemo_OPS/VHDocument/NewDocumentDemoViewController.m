@@ -100,6 +100,7 @@
     [self.navigationController popViewControllerAnimated:NO];
 }
 
+//设置为主持人端
 - (IBAction)pptShowOptBtnClicked:(UIButton *)sender
 {
     sender.selected = !sender.selected;
@@ -173,7 +174,7 @@
 }
 
 - (IBAction)btnClicked:(UIButton*)sender {
-    for (int i = 1; i <= 99; i++) {
+    for (int i = 1; i <= 112; i++) {
         UIButton*v = [_pptOptView viewWithTag:i];
         if([v isKindOfClass:[UIButton class]])
         {
@@ -219,7 +220,12 @@
             _document.selectedView.drawAction = VHDrawAction_Modify;
         }
             break;
-        case 111:_document.selectedView.drawAction = VHDrawAction_Delete; break;//Del
+        case 111:
+        {
+            sender.selected = YES;
+            _document.selectedView.drawAction = VHDrawAction_Delete;
+        }
+            break;//Del
         case 112:[_document.selectedView clear];break;//DelAll
         case 113:[_document.selectedView undo];break;//Undo
         case 114:[_document.selectedView redo];break;//Redo
@@ -294,17 +300,16 @@
     
     [self updateCurDocInfo];
     
-    for (UIView *view in _document.documentViewsByIDs.allValues) {
-        view.hidden = !switchStatus;
-    }
+
 
     _showDocSwitch.on = switchStatus;
 }
 
 - (void)document:(VHDocument *)document selectDocumentView:(VHDocumentView*)documentView
 {
-    NSLog(@"选中文档cid: %@",documentView.cid);
+    NSLog(@"选中文档cid: %@ documentdId:%@",documentView.cid,documentView.documentdId);
     _cidLabel.text = documentView.cid;
+    _docIDTextField.text = _document.selectedView.documentdId;
     [_preView addSubview:_document.selectedView];
 
     for (UIButton *btn in _tabItemDic.allValues) {
@@ -322,7 +327,7 @@
 
 - (void)document:(VHDocument *)document addDocumentView:(VHDocumentView *)documentView
 {
-    NSLog(@"新增文档cid: %@",documentView.cid);
+    NSLog(@"新增文档cid: %@ documentdId:%@",documentView.cid,documentView.documentdId);
     documentView.frame = _preView.bounds;
     if([_document.selectedView isEqual:documentView])
         [_preView addSubview:documentView];
@@ -335,7 +340,7 @@
 
 - (void)document:(VHDocument *)document removeDocumentView:(VHDocumentView *)documentView
 {
-    NSLog(@"删除文档cid: %@",documentView.cid);
+    NSLog(@"删除文档cid: %@ documentdId:%@",documentView.cid,documentView.documentdId);
     [((UIButton *)(_tabItemDic[documentView.cid])) removeFromSuperview];
     [_tabItemDic removeObjectForKey:documentView.cid];
     
@@ -360,6 +365,9 @@
     {
         _infoLabel.text = @"主持人暂未演示文档";
         _cidLabel.text  = @"";
+        for (UIView *view in _document.documentViewsByIDs.allValues) {
+            view.hidden = YES;
+        }
     }
     else
     {
@@ -380,7 +388,12 @@
             _infoLabel.text = @"";
             _cidLabel.text  = @"";
         }
+        for (UIView *view in _document.documentViewsByIDs.allValues) {
+            view.hidden = NO;
+        }
     }
+    
+
 }
 
 + (UIColor*)CGColor:(NSString*)str

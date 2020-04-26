@@ -91,6 +91,7 @@
 		C0B8790822E6B27600054CA8 /* DocUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocUploadViewController.h; sourceTree = "<group>"; };
 		C0B8790922E6B27600054CA8 /* VHDocImgPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHDocImgPickerViewController.h; sourceTree = "<group>"; };
 		C0B8790A22E6B27600054CA8 /* DocUploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocUploadViewController.xib; sourceTree = "<group>"; };
+		C0D93CC62455328700EE2AF0 /* VHYunSDKDemo_OPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VHYunSDKDemo_OPS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +132,7 @@
 		C0B878AC22E6B02A00054CA8 /* VHYunSDKDemo_OPS */ = {
 			isa = PBXGroup;
 			children = (
+				C0D93CC62455328700EE2AF0 /* VHYunSDKDemo_OPS.entitlements */,
 				C017BA8622F28DF500A103EC /* CONSTS.h */,
 				C0B878AD22E6B02A00054CA8 /* AppDelegate.h */,
 				C0B878AE22E6B02A00054CA8 /* AppDelegate.m */,
@@ -491,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VHYunSDKDemo_OPS/VHYunSDKDemo_OPS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
@@ -510,6 +513,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VHYunSDKDemo_OPS/VHYunSDKDemo_OPS.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
