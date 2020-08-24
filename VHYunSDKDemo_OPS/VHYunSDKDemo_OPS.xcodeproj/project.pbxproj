@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03276B623028EB30006939E /* VHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B423028EB20006939E /* VHCore.framework */; };
+		C03276B823028F160006939E /* VHDoc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B323028EB20006939E /* VHDoc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C03276BA23028F160006939E /* VHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B423028EB20006939E /* VHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C03276BC23028F5E0006939E /* VHDoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B323028EB20006939E /* VHDoc.framework */; };
 		C0B878AF22E6B02A00054CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B878AE22E6B02A00054CA8 /* AppDelegate.m */; };
 		C0B878B222E6B02A00054CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B878B122E6B02A00054CA8 /* ViewController.m */; };
 		C0B878B522E6B02A00054CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B878B322E6B02A00054CA8 /* Main.storyboard */; };
@@ -40,6 +44,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C03276B823028F160006939E /* VHDoc.framework in Embed Frameworks */,
+				C03276BA23028F160006939E /* VHCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,6 +54,9 @@
 
 /* Begin PBXFileReference section */
 		C017BA8622F28DF500A103EC /* CONSTS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONSTS.h; sourceTree = "<group>"; };
+		C03276B323028EB20006939E /* VHDoc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VHDoc.framework; sourceTree = "<group>"; };
+		C03276B423028EB20006939E /* VHCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VHCore.framework; sourceTree = "<group>"; };
+		C07EAF5A244EC35300DA605A /* VHYunSDKDemo_OPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VHYunSDKDemo_OPS.entitlements; sourceTree = "<group>"; };
 		C0B878AA22E6B02A00054CA8 /* VHYunSDKDemo_OPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHYunSDKDemo_OPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B878AD22E6B02A00054CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C0B878AE22E6B02A00054CA8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -91,7 +100,6 @@
 		C0B8790822E6B27600054CA8 /* DocUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocUploadViewController.h; sourceTree = "<group>"; };
 		C0B8790922E6B27600054CA8 /* VHDocImgPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VHDocImgPickerViewController.h; sourceTree = "<group>"; };
 		C0B8790A22E6B27600054CA8 /* DocUploadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DocUploadViewController.xib; sourceTree = "<group>"; };
-		C0D93CC62455328700EE2AF0 /* VHYunSDKDemo_OPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VHYunSDKDemo_OPS.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +107,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C03276BC23028F5E0006939E /* VHDoc.framework in Frameworks */,
+				C03276B623028EB30006939E /* VHCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03276B223028EB20006939E /* VHYunFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C03276B323028EB20006939E /* VHDoc.framework */,
+				C03276B423028EB20006939E /* VHCore.framework */,
+			);
+			name = VHYunFrameworks;
+			path = ../../VHYunFrameworks;
+			sourceTree = "<group>";
+		};
 		C03276BB23028F5E0006939E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +152,8 @@
 		C0B878AC22E6B02A00054CA8 /* VHYunSDKDemo_OPS */ = {
 			isa = PBXGroup;
 			children = (
-				C0D93CC62455328700EE2AF0 /* VHYunSDKDemo_OPS.entitlements */,
+				C07EAF5A244EC35300DA605A /* VHYunSDKDemo_OPS.entitlements */,
+				C03276B223028EB20006939E /* VHYunFrameworks */,
 				C017BA8622F28DF500A103EC /* CONSTS.h */,
 				C0B878AD22E6B02A00054CA8 /* AppDelegate.h */,
 				C0B878AE22E6B02A00054CA8 /* AppDelegate.m */,
@@ -271,6 +292,7 @@
 				C0B878A722E6B02A00054CA8 /* Frameworks */,
 				C0B878A822E6B02A00054CA8 /* Resources */,
 				C0B878FA22E6B0A400054CA8 /* Embed Frameworks */,
+				C08120612449FA18002B5B61 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -328,6 +350,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C08120612449FA18002B5B61 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nif [[ $APP_PATH != *ArchiveIntermediates* ]]; then\n    exit 0\nfi\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C0B878A622E6B02A00054CA8 /* Sources */ = {
@@ -498,13 +540,14 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../VHYunFrameworks";
 				INFOPLIST_FILE = VHYunSDKDemo_OPS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vhallyun.ops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -520,13 +563,14 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../VHYunFrameworks";
 				INFOPLIST_FILE = VHYunSDKDemo_OPS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.1.1;
+				MARKETING_VERSION = 2.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vhallyun.ops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
