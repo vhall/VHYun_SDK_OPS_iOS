@@ -3,14 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C03276B623028EB30006939E /* VHCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B423028EB20006939E /* VHCore.framework */; };
-		C03276B823028F160006939E /* VHDoc.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B323028EB20006939E /* VHDoc.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C03276BA23028F160006939E /* VHCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B423028EB20006939E /* VHCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C03276BC23028F5E0006939E /* VHDoc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C03276B323028EB20006939E /* VHDoc.framework */; };
+		C062FB9725D11412007BFDD3 /* NewLiveDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C062FB9125D11412007BFDD3 /* NewLiveDocumentViewController.m */; };
+		C062FB9825D11412007BFDD3 /* NewLiveDocumentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C062FB9325D11412007BFDD3 /* NewLiveDocumentViewController.xib */; };
+		C062FB9925D11412007BFDD3 /* NewVodDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C062FB9525D11412007BFDD3 /* NewVodDocumentViewController.m */; };
+		C062FB9A25D11412007BFDD3 /* NewVodDocumentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C062FB9625D11412007BFDD3 /* NewVodDocumentViewController.xib */; };
 		C0B878AF22E6B02A00054CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B878AE22E6B02A00054CA8 /* AppDelegate.m */; };
 		C0B878B222E6B02A00054CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0B878B122E6B02A00054CA8 /* ViewController.m */; };
 		C0B878B522E6B02A00054CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0B878B322E6B02A00054CA8 /* Main.storyboard */; };
@@ -38,14 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		C0B878FA22E6B0A400054CA8 /* Embed Frameworks */ = {
+		C0EF2D58259B2F9600D47F79 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C03276B823028F160006939E /* VHDoc.framework in Embed Frameworks */,
-				C03276BA23028F160006939E /* VHCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -53,9 +51,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		37E3A9CB1FEDCF1A2D957B95 /* Pods-VHYunSDKDemo_OPS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VHYunSDKDemo_OPS.release.xcconfig"; path = "Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS.release.xcconfig"; sourceTree = "<group>"; };
+		5475FB5BF75E0D28C32902F0 /* Pods-VHYunSDKDemo_OPS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VHYunSDKDemo_OPS.debug.xcconfig"; path = "Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS.debug.xcconfig"; sourceTree = "<group>"; };
+		B6700E31E4A8C6A4E8CF8B32 /* libPods-VHYunSDKDemo_OPS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VHYunSDKDemo_OPS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C017BA8622F28DF500A103EC /* CONSTS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CONSTS.h; sourceTree = "<group>"; };
-		C03276B323028EB20006939E /* VHDoc.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VHDoc.framework; sourceTree = "<group>"; };
-		C03276B423028EB20006939E /* VHCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VHCore.framework; sourceTree = "<group>"; };
+		C062FB9125D11412007BFDD3 /* NewLiveDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewLiveDocumentViewController.m; sourceTree = "<group>"; };
+		C062FB9225D11412007BFDD3 /* NewVodDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewVodDocumentViewController.h; sourceTree = "<group>"; };
+		C062FB9325D11412007BFDD3 /* NewLiveDocumentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewLiveDocumentViewController.xib; sourceTree = "<group>"; };
+		C062FB9425D11412007BFDD3 /* NewLiveDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewLiveDocumentViewController.h; sourceTree = "<group>"; };
+		C062FB9525D11412007BFDD3 /* NewVodDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewVodDocumentViewController.m; sourceTree = "<group>"; };
+		C062FB9625D11412007BFDD3 /* NewVodDocumentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewVodDocumentViewController.xib; sourceTree = "<group>"; };
 		C07EAF5A244EC35300DA605A /* VHYunSDKDemo_OPS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VHYunSDKDemo_OPS.entitlements; sourceTree = "<group>"; };
 		C0B878AA22E6B02A00054CA8 /* VHYunSDKDemo_OPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VHYunSDKDemo_OPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B878AD22E6B02A00054CA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,27 +112,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C03276BC23028F5E0006939E /* VHDoc.framework in Frameworks */,
-				C03276B623028EB30006939E /* VHCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C03276B223028EB20006939E /* VHYunFrameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C03276B323028EB20006939E /* VHDoc.framework */,
-				C03276B423028EB20006939E /* VHCore.framework */,
-			);
-			name = VHYunFrameworks;
-			path = ../../VHYunFrameworks;
-			sourceTree = "<group>";
-		};
 		C03276BB23028F5E0006939E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6700E31E4A8C6A4E8CF8B32 /* libPods-VHYunSDKDemo_OPS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +132,7 @@
 				C0B878AC22E6B02A00054CA8 /* VHYunSDKDemo_OPS */,
 				C0B878AB22E6B02A00054CA8 /* Products */,
 				C03276BB23028F5E0006939E /* Frameworks */,
+				F24C0112E93410EFCB91AE88 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				C07EAF5A244EC35300DA605A /* VHYunSDKDemo_OPS.entitlements */,
-				C03276B223028EB20006939E /* VHYunFrameworks */,
 				C017BA8622F28DF500A103EC /* CONSTS.h */,
 				C0B878AD22E6B02A00054CA8 /* AppDelegate.h */,
 				C0B878AE22E6B02A00054CA8 /* AppDelegate.m */,
@@ -265,6 +259,12 @@
 				C0B8790322E6B27500054CA8 /* NewDocumentDemoViewController.h */,
 				C0B878FF22E6B27500054CA8 /* NewDocumentDemoViewController.m */,
 				C0B878FD22E6B27500054CA8 /* NewDocumentDemoViewController.xib */,
+				C062FB9425D11412007BFDD3 /* NewLiveDocumentViewController.h */,
+				C062FB9125D11412007BFDD3 /* NewLiveDocumentViewController.m */,
+				C062FB9325D11412007BFDD3 /* NewLiveDocumentViewController.xib */,
+				C062FB9225D11412007BFDD3 /* NewVodDocumentViewController.h */,
+				C062FB9525D11412007BFDD3 /* NewVodDocumentViewController.m */,
+				C062FB9625D11412007BFDD3 /* NewVodDocumentViewController.xib */,
 			);
 			path = VHDocument;
 			sourceTree = "<group>";
@@ -281,6 +281,15 @@
 			path = VHDocUpload;
 			sourceTree = "<group>";
 		};
+		F24C0112E93410EFCB91AE88 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5475FB5BF75E0D28C32902F0 /* Pods-VHYunSDKDemo_OPS.debug.xcconfig */,
+				37E3A9CB1FEDCF1A2D957B95 /* Pods-VHYunSDKDemo_OPS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,11 +297,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0B878C022E6B03000054CA8 /* Build configuration list for PBXNativeTarget "VHYunSDKDemo_OPS" */;
 			buildPhases = (
+				A8170911D7A5D932EBB38929 /* [CP] Check Pods Manifest.lock */,
 				C0B878A622E6B02A00054CA8 /* Sources */,
 				C0B878A722E6B02A00054CA8 /* Frameworks */,
 				C0B878A822E6B02A00054CA8 /* Resources */,
-				C0B878FA22E6B0A400054CA8 /* Embed Frameworks */,
 				C08120612449FA18002B5B61 /* ShellScript */,
+				C0EF2D58259B2F9600D47F79 /* Embed Frameworks */,
+				EBEE033D8E2638D8720A07ED /* [CP] Embed Pods Frameworks */,
+				32295AA59282D4A8E5071D02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,7 +321,7 @@
 		C0B878A222E6B02A00054CA8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = vhall;
 				TargetAttributes = {
 					C0B878A922E6B02A00054CA8 = {
@@ -343,6 +355,8 @@
 				C0B8791722E6B27600054CA8 /* DocUploadViewController.xib in Resources */,
 				C0B878BA22E6B03000054CA8 /* LaunchScreen.storyboard in Resources */,
 				C0B878B722E6B03000054CA8 /* Assets.xcassets in Resources */,
+				C062FB9825D11412007BFDD3 /* NewLiveDocumentViewController.xib in Resources */,
+				C062FB9A25D11412007BFDD3 /* NewVodDocumentViewController.xib in Resources */,
 				C0B8790F22E6B27600054CA8 /* NewDocumentDemoViewController.xib in Resources */,
 				C0B878B522E6B02A00054CA8 /* Main.storyboard in Resources */,
 				C0B878E622E6B08E00054CA8 /* InitSDKViewController.xib in Resources */,
@@ -352,6 +366,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		32295AA59282D4A8E5071D02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8170911D7A5D932EBB38929 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VHYunSDKDemo_OPS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C08120612449FA18002B5B61 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,6 +422,23 @@
 			shellPath = /bin/sh;
 			shellScript = "APP_PATH=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nif [[ $APP_PATH != *ArchiveIntermediates* ]]; then\n    exit 0\nfi\n\n# This script loops through the frameworks embedded in the application and\n# removes unused architectures.\nfind \"$APP_PATH\" -name '*.framework' -type d | while read -r FRAMEWORK\ndo\nFRAMEWORK_EXECUTABLE_NAME=$(defaults read \"$FRAMEWORK/Info.plist\" CFBundleExecutable)\nFRAMEWORK_EXECUTABLE_PATH=\"$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME\"\necho \"Executable is $FRAMEWORK_EXECUTABLE_PATH\"\n\nEXTRACTED_ARCHS=()\n\nfor ARCH in $ARCHS\ndo\necho \"Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME\"\nlipo -extract \"$ARCH\" \"$FRAMEWORK_EXECUTABLE_PATH\" -o \"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\"\nEXTRACTED_ARCHS+=(\"$FRAMEWORK_EXECUTABLE_PATH-$ARCH\")\ndone\n\necho \"Merging extracted architectures: ${ARCHS}\"\nlipo -o \"$FRAMEWORK_EXECUTABLE_PATH-merged\" -create \"${EXTRACTED_ARCHS[@]}\"\nrm \"${EXTRACTED_ARCHS[@]}\"\n\necho \"Replacing original executable with thinned version\"\nrm \"$FRAMEWORK_EXECUTABLE_PATH\"\nmv \"$FRAMEWORK_EXECUTABLE_PATH-merged\" \"$FRAMEWORK_EXECUTABLE_PATH\"\n\ndone\n";
 		};
+		EBEE033D8E2638D8720A07ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VHYunSDKDemo_OPS/Pods-VHYunSDKDemo_OPS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -377,10 +447,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0B878B222E6B02A00054CA8 /* ViewController.m in Sources */,
+				C062FB9725D11412007BFDD3 /* NewLiveDocumentViewController.m in Sources */,
 				C0B878E522E6B08E00054CA8 /* InitSDKViewController.m in Sources */,
 				C0B878EF22E6B08E00054CA8 /* VHStystemSetting.m in Sources */,
 				C0B8791522E6B27600054CA8 /* DocUploadViewController.m in Sources */,
 				C0B878BD22E6B03000054CA8 /* main.m in Sources */,
+				C062FB9925D11412007BFDD3 /* NewVodDocumentViewController.m in Sources */,
 				C0B878E422E6B08E00054CA8 /* ViewController+vhall.m in Sources */,
 				C0B878EC22E6B08E00054CA8 /* UIView+ITTAdditions.m in Sources */,
 				C0B878EE22E6B08E00054CA8 /* MBHUDHelper.m in Sources */,
@@ -445,6 +517,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -470,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -504,6 +577,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -523,7 +597,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -533,6 +607,7 @@
 		};
 		C0B878C122E6B03000054CA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5475FB5BF75E0D28C32902F0 /* Pods-VHYunSDKDemo_OPS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VHYunSDKDemo_OPS/VHYunSDKDemo_OPS.entitlements;
@@ -540,14 +615,14 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../VHYunFrameworks";
 				INFOPLIST_FILE = VHYunSDKDemo_OPS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.4.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vhallyun.ops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -556,6 +631,7 @@
 		};
 		C0B878C222E6B03000054CA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E3A9CB1FEDCF1A2D957B95 /* Pods-VHYunSDKDemo_OPS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VHYunSDKDemo_OPS/VHYunSDKDemo_OPS.entitlements;
@@ -563,14 +639,14 @@
 				CURRENT_PROJECT_VERSION = 0;
 				DEVELOPMENT_TEAM = H49DK955B9;
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../VHYunFrameworks";
 				INFOPLIST_FILE = VHYunSDKDemo_OPS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2.0;
+				MARKETING_VERSION = 2.4.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vhallyun.ops;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

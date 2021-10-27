@@ -13,6 +13,9 @@
 #import "NewDocumentDemoViewController.h"
 #import "DocUploadViewController.h"
 
+#import "NewLiveDocumentViewController.h"
+#import "NewVodDocumentViewController.h"
+
 
 #define VHScreenHeight          ([UIScreen mainScreen].bounds.size.height)
 #define VHScreenWidth           ([UIScreen mainScreen].bounds.size.width)
@@ -25,6 +28,7 @@
     UITextField *_businessIDTextField;
     UITextField *_accessTokenTextField;
     UITextField *_roomIDTextField;
+    UITextField *_vodIDTextField;
 }
 
 @end
@@ -78,6 +82,39 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
+- (void)liveBtnClicked:(UIButton*)btn
+{
+    DEMO_Setting.accessToken  = _accessTokenTextField.text;
+    DEMO_Setting.docRoomID = _roomIDTextField.text;
+    if(_accessTokenTextField.text.length == 0)
+    {
+        [self showMsg:@"accessToken为空" afterDelay:1.5];
+        return;
+    }
+    
+    NewLiveDocumentViewController * vc = [[NewLiveDocumentViewController alloc] init];
+    vc.channelID    = DEMO_Setting.docChannelID;
+    vc.roomID       = DEMO_Setting.docRoomID;
+    vc.accessToken = DEMO_Setting.accessToken;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+}
+- (void)vodBtnClicked:(UIButton*)btn
+{
+    DEMO_Setting.accessToken  = _accessTokenTextField.text;
+    DEMO_Setting.recordID = _vodIDTextField.text;
+    if(_accessTokenTextField.text.length == 0)
+    {
+        [self showMsg:@"accessToken为空" afterDelay:1.5];
+        return;
+    }
+    
+    NewVodDocumentViewController * vc = [[NewVodDocumentViewController alloc] init];
+    vc.accessToken = DEMO_Setting.accessToken;
+    vc.recordID    = DEMO_Setting.recordID;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 - (void)initSDKView
 {
@@ -110,7 +147,17 @@
     _roomIDTextField = roomIDTextField;
     [self.view addSubview:roomIDTextField];
     
-    UIButton *nextBtn = [[UIButton alloc] initWithFrame:CGRectMake(accessTokenTextField.left, roomIDTextField.bottom+10, accessTokenTextField.width, accessTokenTextField.height)];
+    UITextField *vodIDTextField = [[UITextField alloc] initWithFrame:CGRectMake(businessIDTextField.left, roomIDTextField.bottom+10, businessIDTextField.width, businessIDTextField.height)];
+    vodIDTextField.placeholder = @"请输入 recordID xxxx";
+    vodIDTextField.text = DEMO_Setting.recordID;
+    vodIDTextField.borderStyle = UITextBorderStyleRoundedRect;
+    vodIDTextField.clearButtonMode=UITextFieldViewModeWhileEditing;
+    vodIDTextField.delegate  = self;
+    _vodIDTextField = vodIDTextField;
+    [self.view addSubview:vodIDTextField];
+    
+    
+    UIButton *nextBtn = [[UIButton alloc] initWithFrame:CGRectMake(accessTokenTextField.left, vodIDTextField.bottom+10, accessTokenTextField.width, accessTokenTextField.height)];
     [nextBtn setTitle:@"演示文档" forState:UIControlStateNormal];
     [nextBtn addTarget:self action:@selector(documentBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     nextBtn.backgroundColor = [UIColor lightGrayColor];
@@ -121,6 +168,18 @@
     [nextBtn1 addTarget:self action:@selector(uploadBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     nextBtn1.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:nextBtn1];
+    
+    UIButton *nextBtn2 = [[UIButton alloc] initWithFrame:CGRectMake(accessTokenTextField.left, nextBtn1.bottom+10, accessTokenTextField.width, accessTokenTextField.height)];
+    [nextBtn2 setTitle:@"直播+文档" forState:UIControlStateNormal];
+    [nextBtn2 addTarget:self action:@selector(liveBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    nextBtn2.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:nextBtn2];
+    
+    UIButton *nextBtn3 = [[UIButton alloc] initWithFrame:CGRectMake(accessTokenTextField.left, nextBtn2.bottom+10, accessTokenTextField.width, accessTokenTextField.height)];
+    [nextBtn3 setTitle:@"点播+文档" forState:UIControlStateNormal];
+    [nextBtn3 addTarget:self action:@selector(vodBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    nextBtn3.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:nextBtn3];
     
     UILabel * label= [[UILabel alloc] initWithFrame:CGRectMake(0, VHScreenHeight - 100, VHScreenWidth, 20)];
     label.font = [UIFont systemFontOfSize:12];

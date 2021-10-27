@@ -329,7 +329,7 @@
 {
     NSLog(@"新增文档cid: %@ documentdId:%@",documentView.cid,documentView.documentdId);
     documentView.frame = _preView.bounds;
-    if([_document.selectedView isEqual:documentView])
+    if([_document.selectedView isEqual:documentView] || !_document.selectedView)
         [_preView addSubview:documentView];
     else
         [_preView insertSubview:documentView belowSubview:_document.selectedView];
