@@ -2,16 +2,16 @@
 Pod::Spec.new do |spec|
   
   spec.name         = 'VHYun_OPS'
-  spec.version      = '2.4.1'
+  spec.version      = '2.5.0'
 
   spec.summary      = "VHall iOS SDK #{spec.name.to_s}"
   spec.homepage     = 'https://www.vhall.com'
   spec.author       = { "LiGuoliang" => "guoliang.li@vhall.com" }
   spec.license      = { :type => "MIT", :file => "LICENSE" }
 
-  spec.source       = { :http => "https://ipa.e.vhall.com/app/sdk_release/iOS/iOS#{spec.name.to_s}_#{spec.version.to_s}.zip" }
-  spec.vendored_frameworks = 'build/*.framework'
-  spec.source_files = "**/*.h"
+  spec.source       = { :git => "https://gitee.com/vhall/VHYun_SDK_OPS_iOS.git", :tag => spec.version.to_s}
+  spec.vendored_frameworks = 'VHYunFrameworks/*.framework'
+  # spec.source_files = "**/*.h"
 
   spec.module_name  = "#{spec.name.to_s}"
   spec.requires_arc = true
@@ -21,5 +21,5 @@ Pod::Spec.new do |spec|
     'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/**',
     'HEADER_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/**',
   }
-  spec.dependency 'VHCore','>=2.0.3'
+  spec.dependency 'VHCore','>=2.3.1'
 end

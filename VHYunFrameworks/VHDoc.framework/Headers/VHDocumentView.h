@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "VHDocWatermarkModel.h"
 
 typedef NS_ENUM(NSInteger,VHDocumentViewType) {
     VHDocumentViewType_Document     = 1 ,   //文档演示
@@ -107,6 +108,8 @@ typedef NS_ENUM(NSInteger,VHDrawType) {
  * 当前步
  */
 @property (nonatomic,assign)int    currentStep;
+
+@property (nonatomic) VHDocWatermarkModel *watermark;
 
 /*
  * 设置当前文档
