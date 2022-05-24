@@ -1,6 +1,0 @@
-framework module VHDoc {
-  umbrella header "VHDoc.h"
-
-  export *
-  module * { export * }
-}
